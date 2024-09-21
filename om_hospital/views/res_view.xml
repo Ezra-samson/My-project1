@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_partner_buttons_pro"  model="ir.ui.view">
+        <field name="name">res.partner.buttons.pro</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="website" position="after">
+                <field name="confirm_pay"/>
+            </field>
+
+        </field>
+    </record>
+
+    <record id="action_res_david" model="ir.actions.act_window">
+        <field name="name">ezra</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a Contact in your address book
+            </p>
+            <p>
+                Odoo helps you track all activities related to your contacts.
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="menu_res"
+              name="Res"
+              action="action_res_david"
+              parent="menu_res_partner"
+              sequence="10"/>
+</odoo>

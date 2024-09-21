@@ -1,0 +1,16 @@
+{   'name':'hospital managment system',
+    'version' : '1.0.0',
+    'summary': 'hospital managment',
+    'author':'by ezra',
+    'sequence':-100,
+    'description': """hospital managment system""",
+    'category': 'hospital',
+    'depends' : ['mail','product','base'],
+    'data': ['security/ir.model.access.csv','data/patient_tag_data.xml','data/patient.tag.csv','views/odoo_playground_view.xml','data/sequance_data.xml','wizard/cancel_appointment_view.xml','views/menu.xml','views/patient_view.xml','views/female_patient_view.xml','views/appointement_view.xml','views/patient_tag_view.xml','views/operation_view.xml','views/res_config_settings_views.xml','views/res_view.xml','report/report.xml','report/report_template.xml'
+             ],
+    'demo':[],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}
